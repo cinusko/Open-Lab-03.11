@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+
 
 namespace Open_Lab_03._11
 {
@@ -6,7 +8,7 @@ namespace Open_Lab_03._11
     {
         public bool IsPalindrome(string str)
         {
-            throw new NotImplementedException();
-        } 
+            return str.SequenceEqual(str.Reverse());
+        }
     }
 }
